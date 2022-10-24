@@ -129,7 +129,8 @@ async def info(event):
 /pashm
 ———————————————————-
 /lashi
-
+———————————————————-
+/eshgh
 
 
 
@@ -144,16 +145,16 @@ async def bomb(event):
                  'کـــص نـنـتـ', '💝کص نـنـت', '☘کـــص نـنـت دیگه☘']
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.7)
+        time.sleep(1)
 
 
-@client.on(events.NewMessage(pattern=r'(?i).*/angosht'))
+@client.on(events.NewMessage(pattern=r'(?i).*/eshgh'))
 async def bomb(event):
     edit_list = ['💛💛💛💛💛', '🧡🧡🧡🧡🧡', '💛💛💛💛💛', '💖💖💖💖💖',
                  '💞💞💞💞💞', '💝💝💝💝💝', '💕💕💕💕💕', '💗💗💗💗💗', 'I love🙂🧡']
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.7)
+        time.sleep(1)
 
 
 @client.on(events.NewMessage(pattern=r'(?i).*/angosht'))
@@ -162,16 +163,16 @@ async def bomb(event):
                  "👌__________👈", "👌_________👈", "👌________👈", '👌____👈', '👌_👈', '✌انگشت شد✌']
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.5)
+        time.sleep(1)
 
 
-@client.on(events.NewMessage(pattern=r'(?i).*/angosht'))
+@client.on(events.NewMessage(pattern=r'(?i).*/pashm'))
 async def bomb(event):
     edit_list = ['🍂🍂🍂🍂🍂🍂🍂🍂🍂🍂🍂🍂🍂🍂🍂', '🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁🍁', '🍃🍃🍃🍃🍃🍃🍃🍃🍃🍃🍃🍃🍃🍃🍃', '🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱', '☘️☘️☘️☘️☘️☘️☘️☘️☘️☘️☘️☘️☘️☘️☘️',
                  'پشم دیگه ندارم ولی برگام ریخت بمولا', '🍃🍂🍁🌱🌿☘️🍀🍃🍁🍂🌿🌱☘️🍀🍃', '🍂🍁🌱🌿🍂🍁🌱🌿🍂🍁🌱🌿🍂🍁🌱🌿', 'دیگه برگی برام نمونده ']
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.5)
+        time.sleep(1)
 
 
 # return anbo bomb :)
@@ -181,7 +182,7 @@ async def bomb(event):
                  "💣————————————————————🚑", "💣————————————🚑", "💣———🚑", "💥BOOOM💥"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.5)
+        time.sleep(1)
 
 
 # return monkey
@@ -190,7 +191,7 @@ async def mankes(event):
     edit_list = ["🐒", "🙊", "🙉", "🙈", "🐵"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.5)
+        time.sleep(1.5)
 # return colors
 
 
@@ -202,7 +203,7 @@ async def colors(event):
 
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.5)
+        time.sleep(0.9)
 
 
 # return fuck you
@@ -212,7 +213,7 @@ async def fuck(event):
                  "*FUCk you*🖕🏼🖕🖕🏻🖕🏽🖕🏾🖕🏿", "🖕🏾", "*FUCK You*🖕🏼🦶🏻👊👺", "🖕", "🖕🏻", "🖕🏾", "🖕🖕🏻", "🖕🏿🖕🏿🖕🏿", "🖕🏼🖕🏼🖕🏼", "🖕🏼"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.5)
+        time.sleep(1)
 
 
 # return sheet
@@ -222,7 +223,7 @@ async def sheet(event):
                  "sheeeeet😐🤦‍♂️", "sheeeeeeeet😐🤦‍♂️", "sheeeeeeeeeeeeet😐🤦‍♂️", "😐💔"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.51)
+        time.sleep(1.51)
 
 
 # return all smail
@@ -231,7 +232,7 @@ async def smale(event):
     edit_list = ["😀", "😃", "😄", "😁", "😆", "😂", "🤣"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.81)
+        time.sleep(1.81)
 
 
 # return nasa hacking
@@ -243,7 +244,7 @@ async def smale(event):
                  "HACKING 🕸NASA🕸...\n<[##########]> 100%", "nasa hacked 😐🕷", "*fuck you*🖕🏿🖕🏾🖕🏽🖕🏼🖕🏻🖕"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.6)
+        time.sleep(1)
 
 
 # return all mah
@@ -255,7 +256,7 @@ async def mah(event):
                  "🌒🌒🌒🌒", "🌑🌑🌑🌑", "🌑"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.6)
+        time.sleep(1)
 
 
 # get time system and return
@@ -292,7 +293,7 @@ async def love(event):
                  "❤️I LOVE YOU ❤️", "I LOVE YOU", "❤️I LOVE YOU❤️", "I LOVE YOU", "❤️I LOVE YOU❤️"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.2)
+        time.sleep(1)
 
 
 @client.on(events.NewMessage(pattern=r'(?i).*/lov'))
@@ -303,7 +304,7 @@ async def love(event):
                  "💙"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.2)
+        time.sleep(1)
 
 
 @client.on(events.NewMessage(pattern=r'(?i).*/go_time'))
@@ -313,7 +314,7 @@ async def go_time(event):
                  "🕐", "🕑", "🕒", "🕓", "🕔", "🕕", "🕖", "🕗", "🕘", "🕙", "🕚", "🕛", "🕛"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.1)
+        time.sleep(1.1)
 
 
 @client.on(events.NewMessage(pattern=r'(?i).*/fuck'))
@@ -322,7 +323,7 @@ async def khak(event):
                  "🙍‍♂️", "🤦‍♂️", "🙍‍♂️", "🤦‍♂️", "🚶‍♂️🚬"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.4)
+        time.sleep(1.4)
 
 
 @client.on(events.NewMessage(pattern=r'(?i).*/get_photo'))
@@ -331,7 +332,7 @@ async def get_photo(event):
                  "آها گرفتم 📸", "بیا اینم عکست | 🐒|     😁🖖"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.6)
+        time.sleep(1.6)
 
 
 @client.on(events.NewMessage(pattern=r'(?i).*/dast_ha'))
@@ -340,7 +341,7 @@ async def dast_ha(event):
                  "🖖", "✋", "☝️", "✌️", "🤘", "🤟", "🖐", "🖖"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.4)
+        time.sleep(1.4)
 
 
 @client.on(events.NewMessage(pattern=r'(?i).*/carzy'))
@@ -348,7 +349,7 @@ async def devane(event):
     edit_list = ["😝", "😛", "😜", "🤪", "😝", "😛", "😜"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.6)
+        time.sleep(1.6)
 
 
 @client.on(events.NewMessage(pattern=r'(?i).*/sleep'))
@@ -356,7 +357,7 @@ async def devane(event):
     edit_list = ["😯", "😲", "🥱", "😴"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.6)
+        time.sleep(1.6)
 
 
 @client.on(events.NewMessage(pattern=r'(?i).*/pink_heart'))
@@ -364,7 +365,7 @@ async def pink_heart(event):
     edit_list = ["💜", "🤍", "💟"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.6)
+        time.sleep(1.6)
 
 
 @client.on(events.NewMessage(pattern=r'(?i).*/pink_love'))
@@ -372,7 +373,7 @@ async def pink_love(event):
     edit_list = ["💖", "💗", "💓", "💕", "💞", "💝", "💘"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.6)
+        time.sleep(1.6)
 
 
 @client.on(events.NewMessage(pattern=r'(?i).*/life'))
@@ -381,7 +382,7 @@ async def life(event):
                  "👨‍👩‍👦", "👨‍👩‍👧‍👦", "🧔", "👴", "⚰️", "🖤🚬"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.7)
+        time.sleep(1.7)
 
 
 @client.on(events.NewMessage(pattern=r'(?i).*/smalle_ice'))
@@ -390,7 +391,7 @@ async def smalle_ice(event):
                  "😁", "😬", "😁", "😬", "😁", "😬", "🥶"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.5)
+        time.sleep(1.5)
 
 
 @client.on(events.NewMessage(pattern=r'(?i).*/flags'))
@@ -408,7 +409,7 @@ async def flags(event):
                  "😂 دو ست دارم چون باشگاهم ست دوم هم تموم شد ست اخر تموم بشه میگم بهت "]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.5)
+        time.sleep(1.5)
 
 
 @client.on(events.NewMessage(pattern=r'(?i).*/mylov2'))
@@ -417,7 +418,7 @@ async def flags(event):
                  "دوست دارم", "دوست دارم م", "دوست دارم ما", "دوست دارم ماد", "دوست دارم مادر"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.5)
+        time.sleep(1.5)
 
 
 @client.on(events.NewMessage(pattern=r'(?i).*/goal'))
@@ -426,7 +427,7 @@ async def flags(event):
                  "راستش میخوام بکنمت ولی", " راستش میخوام بکنمت ولی گل", "راستش میخوام بکنمت ولی گل کندن", "راستش میخوام بکنمت ولی گل کندن نداره"]
     for text in edit_list:
         await event.edit(str(f"{text}"))
-        time.sleep(0.5)
+        time.sleep(1.5)
 ####################################################
 ####################################################
 

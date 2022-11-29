@@ -8,7 +8,7 @@ import os
 import pyttsx3
 import time
 import json
-import psutil
+# import psutil
 try:
     from googlesearch import search
 except ImportError:
@@ -496,17 +496,17 @@ async def save_profile(event):
         await event.edit('پروفایل @{} ذخیره شد'.format(sender.username))
 
 
-@client.on(events.NewMessage(outgoing=True, pattern=r'(?i).*/sys_info'))
-async def sys_info(event):
-    for i in range(0, 50):
-        cpu_info = psutil.cpu_times_percent()
-        cpu_usage = cpu_info[0]
-        # print(cpu_usage)
-        MEMORY = psutil.virtual_memory()
-        result = f"""**CPU** `SYSTEM` : {cpu_usage} %
-**MEMORY** `SESTEM` : {MEMORY[2]} %"""
-        await event.edit(str(result))
-        time.sleep(1)
+# @client.on(events.NewMessage(outgoing=True, pattern=r'(?i).*/sys_info'))
+# async def sys_info(event):
+#     for i in range(0, 50):
+#         cpu_info = psutil.cpu_times_percent()
+#         cpu_usage = cpu_info[0]
+#         # print(cpu_usage)
+#         MEMORY = psutil.virtual_memory()
+#         result = f"""**CPU** `SYSTEM` : {cpu_usage} %
+# **MEMORY** `SESTEM` : {MEMORY[2]} %"""
+#         await event.edit(str(result))
+#         time.sleep(1)
 
 
 ###############################################################

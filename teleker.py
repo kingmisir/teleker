@@ -8,6 +8,7 @@ import os
 import pyttsx3
 import time
 import json
+import psutil
 try:
     from googlesearch import search
 except ImportError:
@@ -44,13 +45,9 @@ async def hi_hadndeler(event):
 درسته اسکریپت 🙃
 برعکس سورس سلف ها دیگه که با php نوشته شده من با زبان قدرتمند پایتون نوشته شدم😗🖖
 بعله پایتون 🐍
-
 میتونید منو رو یک هاست بزارید تا همیشه فعال باشم 🤓
-
 فعلا لینک دانلودم در دسترس نیست بدا میزاریم 🤗
-
 راستی من میتونم به عنوان یک ربات هم تو گروه باشم🥳✌️
-
 برای دیدن دستورا من میتونین  info/  رو ارسال کنین تا لیست دستورات ببینید😉'''
     await event.reply(str(f"{info_bot}"))
 
@@ -67,23 +64,18 @@ async def info(event):
 async def info(event):
     info_command = ''' آمبولاس میترکه 😐🖖
 /bomb
-
 ———————————————————-
 همه میمون ها با هم 😐🖖
 /monkey
-
 ———————————————————-
 رقص رنگ ها 😬🖖
 /colors
-
 ———————————————————-
 فاک یو 😑🖖
 /fuck_you
-
 ———————————————————-
 شت 😐💔
 /shet
-
 ———————————————————-
 همه خنده ها 😀🖖
 /smail
@@ -131,9 +123,27 @@ async def info(event):
 /lashi
 ———————————————————-
 /eshgh
-
-
-
+———————————————————-
+اب و هوا
+/weather
+———————————————————-
+سرچ گوگل
+/google_search
+———————————————————-
+متن به ویس
+/say
+———————————————————-
+ترجمه
+/translator
+———————————————————-
+سیستم 
+/sys_info
+———————————————————-
+سیو
+/save
+———————————————————-
+سیو پروفایل
+/save_profile
 '''
 
     await event.reply(str(f"{info_command}"))
@@ -278,7 +288,6 @@ async def time_now(event):
                 result = f'''{mah}YEAR : {year}
 {mah}MON : {mon}
 {mah}DAY : {day}
-
     {char} {timing} {char}
                 '''
                 await event.edit((str(result)))
@@ -444,21 +453,13 @@ async def main(event):
     it = translate(to_translate, 'it')
     ru = translate(to_translate, 'ru')
     resault = f'''⚡️ترجمه کلمه 📄 {to_translate}
-
-
 به زبان های 🌎🌏🌍
-
 انگلیسی 👨‍🏫 فارسی👨‍🏫روسی🧑‍🏫ایتالیای🧑‍🏫عربی👨‍🏫
-
 〰️〰️〰️〰️〰️〰️
 〽️انگلیسی : {en}
-
 〽️فارسی: {fa}
-
 〽️روسی: {ru}
-
 〽️ایتالیای: {it}
-
 〽️عربی: {ar}
     '''
 
@@ -494,17 +495,18 @@ async def save_profile(event):
 
         await event.edit('پروفایل @{} ذخیره شد'.format(sender.username))
 
-# @client.on(events.NewMessage(outgoing=True,pattern=r'(?i).*/sys_info'))
-# async def sys_info(event):
-#     for i in range(0,50):
-#         cpu_info = psutil.cpu_times_percent()
-#         cpu_usage = cpu_info[0]
-#         # print(cpu_usage)
-#         MEMORY = psutil.virtual_memory()
-#         result = f"""**CPU** `SYSTEM` : {cpu_usage} %
-# **MEMORY** `SESTEM` : {MEMORY[2]} %"""
-#         await event.edit(str(result))
-#         time.sleep(1)
+
+@client.on(events.NewMessage(outgoing=True, pattern=r'(?i).*/sys_info'))
+async def sys_info(event):
+    for i in range(0, 50):
+        cpu_info = psutil.cpu_times_percent()
+        cpu_usage = cpu_info[0]
+        # print(cpu_usage)
+        MEMORY = psutil.virtual_memory()
+        result = f"""**CPU** `SYSTEM` : {cpu_usage} %
+**MEMORY** `SESTEM` : {MEMORY[2]} %"""
+        await event.edit(str(result))
+        time.sleep(1)
 
 
 ###############################################################
@@ -583,11 +585,12 @@ async def google_search(event):
     print(command)
     query = command[1]
     print(query)
-    result = []
+    result = ''
     for i in search(query):
-        result.append(i)
+        result += '>> ' + i + '\n\n'
     # for results in result:
-    await event.edit(str(f"{results }\n "))
+    await event.edit(result)
+
 
 client.start()
 client.run_until_disconnected()

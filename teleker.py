@@ -568,11 +568,14 @@ async def weather(event):
     command = str(event.raw_text)
     command = command.split(':')
     city = command[1]
-    out_put = get_weather_data(city=city)
-    print(out_put)
-    out_put = json.loads
-    out_put = out_put['temp']
-    event.edit(f'{out_put}')
+    output = get_weather_data(city=city)
+    print(output)
+    out_string = f'''City: {output.get('city')}
+DateTime: {output.get('datetime')}
+Temp: {output.get('temp')}
+Humidity: {output.get('humidity')}
+    '''
+    await event.edit(out_string)
 
 
 ##################################

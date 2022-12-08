@@ -13,8 +13,8 @@ weather_api = 'enter weather api here'
 
 bot = Client(
 	name="s-psybot",
-	api_id=11223344,
-	api_hash="aabbccddeeffgghhiijjkkll",
+	api_id=2421227,
+	api_hash="5cfbdb99e4477b828bf06a9cd1efeead",
 	#proxy={"scheme":"socks5", "hostname":"127.0.0.1", "port":1080},
 	hide_password=True
 )

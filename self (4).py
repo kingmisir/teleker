@@ -7,6 +7,7 @@ from time import time, sleep, ctime
 from jdatetime import datetime as dt
 from googlesearch import search
 from requests import get
+import time
 #from timedata import datetime, timedelta
 
 weather_api = 'enter weather api here'
@@ -327,9 +328,44 @@ def boom(Client, Message):
     try:
         for i in list_boom:
             Message.edit(i)
+	    time.sleep(1)	
     except:
         bot.send_message(Message.chat.id, 'Error Code 20')
 
+@bot.on_message(filters.me & filters.command(["love"]))
+def boom(Client, Message):
+    list_boom = ["❤️", "💛", "🧡", "💚", "💙", "💜", "🖤", "💜", "💙", "💚", "💛", "🧡", "❤️", "🧡", "💛",
+                 "💚", "💙", "💜", "🖤", "❤️🖤", "🖤❤️", "🖤❤️❤️🖤", "🖤❤️❤️🖤🖤❤️❤️🖤", "❤️🖤🖤❤️❤️🖤🖤❤️",
+                 "🖤❤️❤️🖤🖤❤️❤️🖤", "❤️🖤🖤❤️❤️🖤🖤❤️", "🖤❤️❤️🖤🖤❤️❤️🖤", "❤️🖤🖤❤️❤️🖤🖤❤️"
+                 "❤️I LOVE YOU ❤️", "I LOVE YOU", "❤️I LOVE YOU❤️", "I LOVE YOU", "❤️I LOVE YOU❤️"]
+    try:
+        for i in list_boom:
+            Message.edit(i)
+	    time.sleep(1)	
+    except:
+        bot.send_message(Message.chat.id, 'Error Code 20')	
+	
+@bot.on_message(filters.me & filters.command(["pink_love"]))
+def boom(Client, Message):
+    list_boom = ["💖", "💗", "💓", "💕", "💞", "💝", "💘"]
+    try:
+        for i in list_boom:
+            Message.edit(i)
+	    time.sleep(1)	
+    except:
+        bot.send_message(Message.chat.id, 'Error Code 20')	
+	
+@bot.on_message(filters.me & filters.command(["fuck_you"]))
+def boom(Client, Message):
+    list_boom = ["*fuck you*🖕🏿🖕🏾🖕🏽🖕🏼🖕🏻🖕", "🖕🏿", "*Fuck you*🖕🖕🏻🖕🏼🖕🏽🖕🏾🖕🏿""🖕", "*FUck you*🖕🏿🖕🖕🏾🖕🏻🖕🏽🖕🏼", "🖕🏻",
+                 "*FUCk you*🖕🏼🖕🖕🏻🖕🏽🖕🏾🖕🏿", "🖕🏾", "*FUCK You*🖕🏼🦶🏻👊👺", "🖕", "🖕🏻", "🖕🏾", "🖕🖕🏻", "🖕🏿🖕🏿🖕🏿", "🖕🏼🖕🏼🖕🏼", "🖕🏼"]
+    try:
+        for i in list_boom:
+            Message.edit(i)
+	    time.sleep(1)	
+    except:
+        bot.send_message(Message.chat.id, 'Error Code 20')	
+	
 @bot.on_message(filters.me & filters.command(["get_id"]))
 def get_id(Client, Message):
     try:

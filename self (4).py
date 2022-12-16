@@ -19,7 +19,6 @@ bot = Client(
 	#proxy={"scheme":"socks5", "hostname":"127.0.0.1", "port":1080},
 	hide_password=True
 )
-
 @bot.on_message(filters.me & filters.command(["r"]))
 def raw(Client, Message):
     Message.delete()
@@ -328,44 +327,9 @@ def boom(Client, Message):
     try:
         for i in list_boom:
             Message.edit(i)
-	    time.sleep(1)	
     except:
         bot.send_message(Message.chat.id, 'Error Code 20')
 
-@bot.on_message(filters.me & filters.command(["love"]))
-def boom(Client, Message):
-    list_boom = ["❤️", "💛", "🧡", "💚", "💙", "💜", "🖤", "💜", "💙", "💚", "💛", "🧡", "❤️", "🧡", "💛",
-                 "💚", "💙", "💜", "🖤", "❤️🖤", "🖤❤️", "🖤❤️❤️🖤", "🖤❤️❤️🖤🖤❤️❤️🖤", "❤️🖤🖤❤️❤️🖤🖤❤️",
-                 "🖤❤️❤️🖤🖤❤️❤️🖤", "❤️🖤🖤❤️❤️🖤🖤❤️", "🖤❤️❤️🖤🖤❤️❤️🖤", "❤️🖤🖤❤️❤️🖤🖤❤️"
-                 "❤️I LOVE YOU ❤️", "I LOVE YOU", "❤️I LOVE YOU❤️", "I LOVE YOU", "❤️I LOVE YOU❤️"]
-    try:
-        for i in list_boom:
-            Message.edit(i)
-	    time.sleep(1)	
-    except:
-        bot.send_message(Message.chat.id, 'Error Code 20')	
-	
-@bot.on_message(filters.me & filters.command(["pink_love"]))
-def boom(Client, Message):
-    list_boom = ["💖", "💗", "💓", "💕", "💞", "💝", "💘"]
-    try:
-        for i in list_boom:
-            Message.edit(i)
-	    time.sleep(1)	
-    except:
-        bot.send_message(Message.chat.id, 'Error Code 20')	
-	
-@bot.on_message(filters.me & filters.command(["fuck_you"]))
-def boom(Client, Message):
-    list_boom = ["*fuck you*🖕🏿🖕🏾🖕🏽🖕🏼🖕🏻🖕", "🖕🏿", "*Fuck you*🖕🖕🏻🖕🏼🖕🏽🖕🏾🖕🏿""🖕", "*FUck you*🖕🏿🖕🖕🏾🖕🏻🖕🏽🖕🏼", "🖕🏻",
-                 "*FUCk you*🖕🏼🖕🖕🏻🖕🏽🖕🏾🖕🏿", "🖕🏾", "*FUCK You*🖕🏼🦶🏻👊👺", "🖕", "🖕🏻", "🖕🏾", "🖕🖕🏻", "🖕🏿🖕🏿🖕🏿", "🖕🏼🖕🏼🖕🏼", "🖕🏼"]
-    try:
-        for i in list_boom:
-            Message.edit(i)
-	    time.sleep(1)	
-    except:
-        bot.send_message(Message.chat.id, 'Error Code 20')	
-	
 @bot.on_message(filters.me & filters.command(["get_id"]))
 def get_id(Client, Message):
     try:
